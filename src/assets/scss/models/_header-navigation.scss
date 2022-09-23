@@ -1,0 +1,21 @@
+.header-navigation {
+    $self: &;
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #{$self}__item {
+            padding:  17px 0;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+            #{$self}__link {
+                font-size: 1.4rem;//поскольку для html у на 10px, то будет 14px
+                line-height: 1.6rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

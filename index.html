@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/assets/css/root.main.css">
     <title>Магазин кресел</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <div class="app">
+        <nav class="header-navigation wrapper">
+            <ul class="header-navigation__list">
+                <li class="header-navigation__item"><a class="header-navigation__link" href="#">Доставка</a></li>
+                <li class="header-navigation__item"><a class="header-navigation__link" href="#">Оплата</a></li>
+                <li class="header-navigation__item"><a class="header-navigation__link" href="#">Отзовы</a></li>
+                <li class="header-navigation__item"><a class="header-navigation__link" href="#">Вопрос-ответ</a></li>
+                <li class="header-navigation__item"><a class="header-navigation__link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__wrapper wrapper">
+                <a href="#" class="header__logo-block">
+                    <img src="src/assets/icon/logo.svg" alt="logo" class="header__logo-img">
+                </a>
+                <span class="header__logo-title">BEAUTY</span>
+                <div class="header__search-block">
+                    <img src="src/assets/icon/search.svg" alt="search-icon" class="header__search-icon">
+                    <input type="search" class="header__search-input">
+                </div>
+                <div class="header__collback-block">
+                    <a href="tel:8812123456" class="header__tel-number">8 (812) 123-45-67</a>
+                    <button class="header__callback-button default-button">Обратный звонок</button>
+                </div>
+            </div>
+        </header>
+        <div class="slider">
+            <div class="slider__content">
+                <h1>Sample text</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquid, ea eius dolorum delectus,
+                    officia repudiandae vel officiis veritatis quae illum perspiciatis magni dolores sapiente harum
+                    voluptate cumque? Explicabo, delectus!</p>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://place-hold.it/800x300" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://place-hold.it/800x300" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://place-hold.it/800x300" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
